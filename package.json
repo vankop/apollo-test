@@ -1,0 +1,25 @@
+{
+  "name": "apollo-test",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.0.13"
+  },
+  "dependencies": {
+    "graphql-tag": "^2.4.2",
+    "material-ui": "^0.19.2",
+    "react": "=15.6.1",
+    "react-apollo": "=1.4.15",
+    "react-dom": "=15.6.1",
+    "react-redux": "=5.0.6",
+    "redux": "=3.7.2",
+    "shallow-equal": "=1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001"
+}
