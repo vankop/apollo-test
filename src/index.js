@@ -12,6 +12,9 @@ const client = new ApolloClient({
     networkInterface: createNetworkInterface({
         uri: '/graphql'
     }),
+    dataIdFromObject: function (object) {
+        return `${object.__typename.replace(/^mutation_/, '')}:${object.id || ''}`
+	}
 });
 
 const store = createStore(
